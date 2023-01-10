@@ -1,0 +1,88 @@
+@import 'base.css';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icons {
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+}
+
+span {
+    text-decoration: none;
+}
+
+ul {
+    padding-top: 2%;
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10%;
+}
+
+.margin-bottom {
+    margin-bottom: 2%;
+}
+
+.about, .projects, .profile, .communication-languages, .programming-languages {
+    padding: 5%;
+}
+
+.title {
+    font-family: var(--font-title);
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.text {
+    font-family: var(--font-content);
+    text-align: center;
+}
+
+.list {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.a {
+    font-family: var(--font-content);
+    text-align: center;
+    text-decoration: none;
+}
+
+.pfp {
+    border-radius: 10%;
+    width: 15vw;
+    display: block;
+    margin: 5vh auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ddd;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "profile about projects"
+    "socials about projects"
+    "communication-languages about projects"
+    "programming-languages about projects";
+}
+
+.about { grid-area: about; }
+
+.projects { grid-area: projects; }
+
+.profile { grid-area: profile; }
+
+.communication-languages { grid-area: communication-languages; }
+
+.programming-languages { grid-area: programming-languages; }
+
+.socials { grid-area: socials;}

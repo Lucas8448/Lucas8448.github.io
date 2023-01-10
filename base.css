@@ -1,0 +1,10 @@
+:root {
+    --colour-background: rgb(47, 47, 47);
+    --colour-primary: #7ADCFA;
+    --colour-secondary: #6EE368;
+    --colour-tertiary: #FAE37F;
+    --colour-quaternary: #E38868;
+    --colour-quinary: #E891FF;
+    --font-title: 'Merriweather';
+    --font-content: 'Roboto';
+}
