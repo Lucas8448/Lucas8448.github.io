@@ -1,10 +1,15 @@
 :root {
-    --colour-background: rgb(47, 47, 47);
+    --colour-background: #444444;
+    --colour-background-dark: #333333;
     --colour-primary: #7ADCFA;
     --colour-secondary: #6EE368;
-    --colour-tertiary: #FAE37F;
-    --colour-quaternary: #E38868;
-    --colour-quinary: #E891FF;
+    --colour-text: #EEEEEE;
     --font-title: 'Merriweather';
     --font-content: 'Roboto';
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
