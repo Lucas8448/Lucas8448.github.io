@@ -20,15 +20,29 @@
     display: block;
     color: var(--colour-text);
     text-align: center;
-    padding: 1vh 1vh;
-    margin: 0 1vw;
+    padding: 1vh 1vw;
     text-decoration: none;
     font-size: 1.5rem;
     transition: background-color 1s ease-out 100ms
 }
 
-.navbar a:hover {
+.navbar .home:hover {
     background-color: var(--colour-primary);
+    color: var(--colour-background-dark);
+}
+
+.navbar .about:hover {
+    background-color: var(--colour-secondary);
+    color: var(--colour-background-dark);
+}
+
+.navbar .contact:hover {
+    background-color: var(--colour-tertiary);
+    color: var(--colour-background-dark);
+}
+
+.navbar .projects:hover {
+    background-color: var(--colour-quaternary); 
     color: var(--colour-background-dark);
 }
 
