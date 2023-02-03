@@ -1,13 +1,15 @@
 :root {
-    --colour-background: #444444;
-    --colour-background-dark: #333333;
-    --colour-primary: #7ADCFA;
-    --colour-secondary: #6EE368;
-    --colour-tertiary: #FCCB23;
-    --colour-quaternary: #FED4D6;
-    --colour-text: #EEEEEE;
+    --colour-background-light: #F2F2F2;
+    --colour-background-dark: #383838;
+    --colour-primary: #84E8FA;
+    --colour-secondary: #6DE3DB;
+    --colour-tertiary: #7AFFD8;
+    --colour-quaternary: #74FFBA;
+    --colour-text-light: #EEEEEE;
+    --colour-text-dark: #383838;
     --font-title: 'Merriweather';
     --font-content: 'Roboto';
+    --font-links: 'Lato';
 }
 
 * {
