@@ -21,8 +21,9 @@
     color: var(--colour-text);
     text-align: center;
     padding: 1vh 1vh;
+    margin: 0 1vw;
     text-decoration: none;
-    font-size: 2vh;
+    font-size: 1.5rem;
     transition: background-color 1s ease-out 100ms
 }
 
@@ -31,18 +32,3 @@
     color: var(--colour-background-dark);
 }
 
-.content {
-    min-height: 100vh;
-    background-color: var(--colour-background);
-    background-image: url("./assets/images/ice.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.intro {
-    width: 100%;
-    margin-top: 2.5vh;
-    background-color: var(--colour-background);
-}
