@@ -5,6 +5,7 @@ body {
 }
 
 .container {
+  overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -33,6 +34,7 @@ h2 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   position: relative;
+  z-index: -1;
 }
 
 .project h3 {
@@ -78,5 +80,3 @@ h2 {
 .github-link a:hover {
   color: #fff;
 }
-
-
