@@ -1,8 +1,29 @@
 @import 'base.css';
 
+/* text styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #eef1f7;
+    background-color: var(--colour-background-light);
+    color: var(--colour-text-dark);
+    font-family: var(--font-content);
+}
+
+h1, h2, h3, h4 {
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 /* Navbar styling */
 .navbar {
     background-color: var(--colour-background-dark);
+    color: var(--colour-text-light);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -19,6 +40,7 @@
 .navbar a {
     display: block;
     color: var(--colour-text);
+    font-family: var(--font-links);
     text-align: center;
     padding: 1vh 1vw;
     text-decoration: none;
@@ -41,8 +63,17 @@
     color: var(--colour-background-dark);
 }
 
-.navbar .projects:hover {
+.navbar .portfolio:hover {
     background-color: var(--colour-quaternary); 
     color: var(--colour-background-dark);
+}
+
+.content {
+    padding: 5vh 5vw;
+    margin-top: calc(2vh + 1.5rem);
+    height: calc(100vh - (2vh + 1.5rem));
+    background-color: var(--colour-background);
+    color: var(--colour-text);
+    font-family: var(--font-content);
 }
 
