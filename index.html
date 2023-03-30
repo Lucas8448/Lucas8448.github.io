@@ -1,120 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lucas William Bateson's Homepage</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta charset="utf-8">
+  <title>Lucas William Bateson - Portfolio</title>
+  <link rel="stylesheet" href='style.css' />
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=All' />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 
 <body>
-  <section id="introduction">
-    <img src="assets/images/lucas.jpeg" alt="Lucas William Bateson">
-    <h1>Lucas William Bateson</h1>
-    <p>Age: 16</p>
-    <p>Location: Oslo, Norway</p>
-    <p>Nationality: British</p>
-    <p>Email: lucas.bateson@gmail.com</p>
-    <p>Discord: battlelord#2509</p>
-    <p>Website: lucasbateson.com</p>
-  </section>
-
-  <section id="cards">
-    <div class="card">
-      <h2>Interests</h2>
+  <div class="container">
+    <div class="profile">
+      <img class="pfp" src="assets/images/lucas.jpeg" alt="photo of me" />
+      <h1 class="title">Lucas William Bateson</h1>
+      <b>
+        <h3 class="text"><a href="assets/documents/Resume.pdf">Resume</a></h3>
+      </b>
+    </div>
+    <div class="socials">
+      <h3 class="title">Socials</h3>
+      <h4 class="text"><i class="material-symbols-outlined">mail</i>Mail - lucas.bateson@gmail.com</h4>
+      <h4 class="text"><i class="material-symbols-outlined">chat</i>Discord - battlelord#2509</h4>
+      <h4 class="text"><i class="material-symbols-outlined">link</i>Website - lucasbateson.com</h4>
+    </div>
+    <div class="communication-languages margin-bottom">
+      <h2 class="title">Languages</h2>
+      <h4 class="text"><i class="material-symbols-outlined">language</i>English - Native</h4>
+      <h4 class="text"><i class="material-symbols-outlined">language</i>Norwegian - Native</h4>
+      <h4 class="text"><i class="material-symbols-outlined">language</i>German - Conversational</h4>
+    </div>
+    <div class="programming-languages">
+      <h2 class="title">Programming languages and frameworks</h2>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>HTML - Advanced</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>CSS - Intermediate</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>Javascript - Intermediate</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>Python - Upper-Intermediate</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>Vue.js - Intermediate</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>P5.js - Advanced</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>Three.js - Upper-Intermediate</h4>
+      <h4 class="text"><span class="material-symbols-outlined">code</span>Java - Intermediate</h4>
+    </div>
+    <div class="about">
+      <h2 class="title">About me</h2>
+      <h3 class="title">Intro</h3>
+      <h4 class="text">My name is Lucas William Bateson, a 16-year-old student at Fyrstikkaleen College in Oslo, Norway.
+        Although I was born and raised in Oslo, I am a British national.</h4>
+      <h3 class="title">Interests</h3>
+      <h4 class="text">My interests include programming, gaming, and photography.</h4>
+    </div>
+    <div class="projects">
+      <h2 class="title">Projects</h2>
       <ul>
-        <li>Programming</li>
-        <li>Gaming</li>
-        <li>Photography</li>
+        <li>
+          <h3 class="title">Vue.js weather app</h3>
+          <h5 class="text list">In this project, my goal was to create a weather forecasting app using the
+            OpenWeather API and present the data in an easy-to-use interface.</h5>
+          <h5 class="text"><a href="https://github.com/Lucas8448/Vue-weather-app">View on Github</a></h5>
+        </li>
+        <li>
+          <h3 class="title">Lokaler.lnu.no</h3>
+          <h5 class="text list">This project was introduced to me at a programming course with the creators,
+            where they taught me the basic concepts of Ruby on Rails and how to create components. I was
+            also shown how to send pull requests to the repository and work on my code based on their
+            feedback. I am still listed as a contributor on this project, although I mostly just observe the
+            website's development.</h5>
+          <h5 class="text"><a href="https://github.com/lnu-norge/lokaler.lnu.no">View on Github</a></h5>
+        </li>
+        <li>
+          <h3 class="title">Webshop</h3>
+          <h5 class="text list">I created this project as practice for building functional websites using the
+            Flask library in Python to serve templates and data to the site. It started as a basic webshop
+            template, but I expanded its functionality and essentially rewrote the code from scratch.</h5>
+          <h5 class="text"><a href="https://github.com/Lucas8448/WebShop">View on Github</a></h5>
+        </li>
+        <li>
+          <h3 class="title">Elevation-API</h3>
+          <h5 class="text list">This project aimed to be an app that could return the height of the ground
+            (above sea level) at a given set of latitude and longitude coordinates. I spent most of the
+            project figuring out how to retrieve this information, and I eventually discovered a black and
+            white height map. I then focused on how to extract data from the map and into an array, which I
+            was able to accomplish to some extent.
+          </h5>
+          <h5 class="text"><a href="https://github.com/Lucas8448/Elevation-API">View on Github</a></h5>
+        </li>
       </ul>
     </div>
-    <div class="card">
-      <h2>Education</h2>
-      <p>Fyrstikkaleen College</p>
-      <p>Oslo, Norway</p>
-    </div>
-    <div class="card">
-      <h2>Languages</h2>
-      <ul>
-        <li>English (Native)</li>
-        <li>Norwegian (Native)</li>
-        <li>German (Conversational)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="skill-bars">
-    <h2>Skills</h2>
-    <div class="skill-bar">
-      <div class="skill-label">HTML</div>
-      <div class="skill-level" data-level="80">Advanced</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">CSS</div>
-      <div class="skill-level" data-level="60">Intermediate</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">JavaScript</div>
-      <div class="skill-level" data-level="60">Intermediate</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Python</div>
-      <div class="skill-level" data-level="70">Upper-Intermediate</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Vue.js</div>
-      <div class="skill-level" data-level="60">Intermediate</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">P5.js</div>
-      <div class="skill-level" data-level="80">Advanced</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Three.js</div>
-      <div class="skill-level" data-level="70">Upper-Intermediate</div>
-    </div>
-    <div class="skill-bar">
-      <div class="skill-label">Java</div>
-      <div class="skill-level" data-level="60">Intermediate</div>
-    </div>
-  </section>
-  <section id="project-carousel">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project project-card">
-        <h3>Vue.js weather app</h3>
-        <p>In this project, my goal was to create a weather forecasting app using the OpenWeather API and present the
-          data in an easy-to-use interface.</p>
-        <a href="https://github.com/Lucas8448/Vue-weather-app" class="github-button">GitHub</a>
-      </div>
-      <div class="project project-card">
-        <h3>Lokaler.lnu.no</h3>
-        <p>This project was introduced to me at a programming course with the creators, where they taught me the basic
-          concepts of Ruby on Rails and how to create components. I was also shown how to send pull requests to the
-          repository and work on my code based on their feedback. I am still listed as a contributor on this project,
-          although I mostly just observe the website's development.</p>
-        <a href="https://github.com/lnu-norge/lokaler.lnu.no" class="github-button">GitHub</a>
-      </div>
-      <div class="project project-card">
-        <h3>Webshop</h3>
-        <p>I created this project as practice for building functional websites using the Flask library in Python to
-          serve templates and data to the site. It started as a basic webshop template, but I expanded its
-          functionality
-          and essentially rewrote the code from scratch.</p>
-        <a href="https://github.com/Lucas8448/WebShop" class="github-button">GitHub</a>
-      </div>
-      <div class="project project-card">
-        <h3>Elevation-API</h3>
-        <p>This project aimed to be an app that could return the height of the ground (above sea level) at a given set
-          of latitude and longitude coordinates. I spent most of the project figuring out how to retrieve this
-          information, and I eventually discovered a black and white height map. I then focused on how to extract data
-          from the map and into an array, which I was able to accomplish to some extent.</p>
-        <a href="https://github.com/Lucas8448/Elevation-API" class="github-button">GitHub</a>
-      </div>
-    </div>
-  </section>
+  </div>
 </body>
-
-</html>
