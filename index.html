@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="body">
   <!--navbar-->
   <div class="navbar">
     <div class="links">
@@ -29,7 +29,7 @@
       <div class="intro">
         <img class="profile-pic" src="assets/images/lucas.jpeg" alt="photo of Lucas William Bateson">
         <h1 class="name">Lucas William Bateson</h1>
-        <p class="tagline">A bit about me: I am a 16-year-old student studying Information Technologies and Media
+        <p class="tagline">I am a 16-year-old student studying Information Technologies and Media
           at
           Fyrstikkalleen Upper-Secondary School. I've had a long-standing interest in programming and
           computers, and I'm
@@ -146,7 +146,7 @@
             serve templates and data to the site. It started as a basic webshop template, but I expanded its
             functionality and essentially rewrote the code from scratch.</p>
           <div class="github-link">
-            <a href="https://github.com/Lucas8448/WebShop" target="_blank" rel="noopener noreferrer">Viewon Github</a>
+            <a href="https://github.com/Lucas8448/WebShop" target="_blank" rel="noopener noreferrer">View on Github</a>
           </div>
         </div>
         <div class="project">
@@ -159,12 +159,25 @@
             from the map and into an array, which I was able to accomplish to some extent.</p>
           <div class="github-link">
             <a href="https://github.com/Lucas8448/Elevation-API" target="_blank" rel="noopener noreferrer">View
-              onGithub</a>
+              on Github</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.151.2/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.clouds.min.js"></script>
+  <script>
+    VANTA.CLOUDS({
+      el: "#body",
+      mouseControls: false,
+      touchControls: false,
+      gyroControls: false,
+      minHeight: 1.00,
+      minWidth: 1.00,
+      speed: 0.60
+    })
+  </script>
 </body>
 
 </html>
