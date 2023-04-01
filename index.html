@@ -229,8 +229,8 @@
     }
 
     function hasSufficientPerformance() {
-      const minCores = 4;
-      const minMemory = 1024 * 1024 * 1024; // 1 GB
+      const minCores = 6;
+      const minMemory = 1024 * 1024 * 1024; // 4 GB
 
       const cores = navigator.hardwareConcurrency || 0;
       const memory = window.performance && window.performance.memory && window.performance.memory.jsHeapSizeLimit;
