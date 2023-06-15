@@ -79,6 +79,7 @@
               <li>Javascript - Intermediate</li>
               <li>Python - Upper-Intermediate</li>
               <li>Vue.js - Intermediate</li>
+              <li>React - Upper-Beginner</li>
               <li>P5.js - Advanced</li>
               <li>Three.js - Upper-Intermediate</li>
               <li>Java - Intermediate</li>
@@ -196,54 +197,6 @@
       </div>
     </div>
   </section>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script>
-    function loadScript(url, callback) {
-      const script = document.createElement("script");
-      script.type = "text/javascript";
-      if (script.readyState) { // IE
-        script.onreadystatechange = function () {
-          if (script.readyState === "loaded" || script.readyState === "complete") {
-            script.onreadystatechange = null;
-            callback();
-          }
-        };
-      } else { // Others
-        script.onload = function () {
-          callback();
-        };
-      }
-      script.src = url;
-      document.getElementsByTagName("head")[0].appendChild(script);
-    }
-
-    function initVanta() {
-      VANTA.CLOUDS({
-        el: "#body",
-        mouseControls: false,
-        touchControls: false,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00
-      });
-    }
-
-    function hasSufficientPerformance() {
-      const minCores = 6;
-      const minMemory = 1024 * 1024 * 1024; // 4 GB
-
-      const cores = navigator.hardwareConcurrency || 0;
-      const memory = window.performance && window.performance.memory && window.performance.memory.jsHeapSizeLimit;
-
-      return cores >= minCores && memory >= minMemory;
-    }
-
-    if (Modernizr.webgl && hasSufficientPerformance()) {
-      loadScript("js/three.js", function () {
-        loadScript("js/clouds.js", initVanta);
-      });
-    }
-  </script>
 </body>
 
 </html>
