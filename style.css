@@ -1,16 +1,17 @@
 :root {
-  --colour-background-light: #F2F2F2;
-  --colour-background-dark: #383838;
-  --colour-primary: #84E8FA;
-  --colour-secondary: #6DE3DB;
-  --colour-tertiary: #7AFFD8;
-  --colour-quaternary: #74FFBA;
+  --colour-background-light: #F5F5F5;
+  --colour-background-dark: #333333;
+  --colour-primary: #007BFF;
+  --colour-secondary: #39FF14;
+  --colour-tertiary: #9400D3;
+  --colour-quaternary: #C0C0C0;
   --colour-text-light: #EEEEEE;
-  --colour-text-dark: #292929;
+  --colour-text-dark: #1A1A1A;
   --font-title: 'Merriweather';
   --font-content: 'Roboto';
   --font-links: 'Lato';
 }
+
 
 * {
   box-sizing: border-box;
@@ -19,24 +20,26 @@
 }
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  color: #333;
-  background-color: #f0f2f5;
+  color: var(--colour-text-dark);
+  background-color: var(--colour-background-light);
 }
 
 h2 {
   font-size: 36px;
   text-align: center;
   margin-bottom: 40px;
+  color: var(--colour-text-dark);
 }
 
 h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  color: var(--colour-text-dark);
 }
 
 p {
@@ -125,14 +128,13 @@ li {
 }
 
 .social-links a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #007bff;
+  color: var(--colour-primary);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .social-links a:hover {
-  text-decoration: underline;
+  color: var(--colour-text-dark);
 }
 
 .project {
@@ -152,6 +154,7 @@ li {
 }
 
 .github-link {
+  background-color: var(--colour-secondary);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -163,12 +166,12 @@ li {
 }
 
 .github-link a {
-  color: #fff;
+  color: var(--colour-background-light);
   text-decoration: none;
 }
 
 .github-link a:hover {
-  color: #fff;
+  color: var(--colour-primary);
 }
 
 .skills {
@@ -194,7 +197,7 @@ li {
 
 .navbar a {
   display: block;
-  color: var(--colour-text);
+  color: var(--colour-text-light);
   font-family: var(--font-links);
   text-align: center;
   padding: 1vh 1vw;
@@ -205,22 +208,28 @@ li {
 
 .navbar .home:hover {
   background-color: var(--colour-primary);
-  color: var(--colour-background-dark);
+  color: var(--colour-background-light);
 }
 
 .navbar .about:hover {
   background-color: var(--colour-secondary);
-  color: var(--colour-background-dark);
+  color: var(--colour-background-light);
 }
 
 .navbar .contact:hover {
   background-color: var(--colour-tertiary);
-  color: var(--colour-background-dark);
+  color: var(--colour-background-light);
 }
 
 .navbar .portfolio:hover {
   background-color: var(--colour-quaternary);
-  color: var(--colour-background-dark);
+  color: var(--colour-background-light);
+}
+
+.about-section,
+.contact-info,
+.project {
+  border-color: var(--colour-quaternary);
 }
 
 .content {
