@@ -279,3 +279,70 @@ canvas {
   left: 0;
   z-index: -1;
 }
+
+/* Mobile Adapting */
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  #about,
+  #contact,
+  #home,
+  #projects {
+    padding: 40px 0;
+  }
+
+  .about-content,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-pic {
+    width: 250px;
+    height: 250px;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    margin-top: calc(2vh + 1.2rem);
+  }
+
+  .grades-content {
+    grid-template-columns: 1fr;
+  }
+
+  .grade-section h3 {
+    font-size: 18px;
+  }
+
+  .grade-section p {
+    font-size: 16px;
+  }
+}
