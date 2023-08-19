@@ -2,7 +2,7 @@ let particles = [];
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    for (let i = 0; i < 110; i++) {
+    for (let i = 0; i < 150; i++) {
         particles.push(new Particle());
     }
 }
@@ -20,8 +20,9 @@ function draw() {
 class Particle {
     constructor() {
         this.pos = createVector(random(width), random(height));
-        this.vel = createVector(random(-2, 2), random(-2, 2));
-        this.size = 5;
+        this.vel = createVector(random(-3, 3), random(-3, 3)).mult(random(0.5, 2));
+        this.size = random(3, 7);
+        this.color = color(100, 255, 100, 0.5);
     }
 
     update() {
@@ -31,7 +32,7 @@ class Particle {
 
     show() {
         noStroke();
-        fill('rgba(100,255,100,0.5)');
+        fill(this.color);
         ellipse(this.pos.x, this.pos.y, this.size);
     }
 
@@ -46,12 +47,14 @@ class Particle {
     }
 
     checkParticles(particles) {
-        particles.forEach(particle => {
+        for (let i = particles.indexOf(this) + 1; i < particles.length; i++) {
+            const particle = particles[i];
             const d = dist(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
+            const alpha = map(d, 0, 150, 0.5, 0);
             if (d < 150) {
-                stroke('rgba(100,255,100,0.5)');
+                stroke(100, 255, 100, alpha * 255);
                 line(this.pos.x, this.pos.y, particle.pos.x, particle.pos.y);
             }
-        });
+        }
     }
 }
