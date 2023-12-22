@@ -58,3 +58,10 @@ class Particle {
         }
     }
 }
+
+const birthDate = new Date('2006-10-26'); // YYYY-MM-DD
+const currentDate = new Date();
+const ageDiff = new Date(currentDate - birthDate);
+const age = Math.abs(ageDiff.getUTCFullYear() - 1970);
+const intro = `I am a ${age}-year-old student studying Information Technologies and Media at Fyrstikkalleen Upper-Secondary School. I've had a long-standing interest in programming and computers, and I'm passionate about these subjects. In my free time, I enjoy playing computer games, programming, and learning more about technology. I have a wide range of experience within different technological areas due to multiple years of exploring programming.`;
+document.getElementById("intro").innerText = intro;
