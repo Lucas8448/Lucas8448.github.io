@@ -1,0 +1,99 @@
+{
+  "name": "Lucas William Bateson",
+  "born": "26-10-2006",
+  "education": "Fyrstikkalleen College",
+  "location": "Oslo, Norway",
+  "nationality": "British",
+  "interests": ["Programming", "Gaming", "Photography"],
+  "languages": [
+    {"name": "English", "level": "Native"},
+    {"name": "Norwegian", "level": "Native"},
+    {"name": "German", "level": "Conversational"}
+  ],
+  "skills": [
+    {"name": "HTML", "level": "Advanced"},
+    {"name": "CSS", "level": "Intermediate"},
+    {"name": "Javascript", "level": "Intermediate"},
+    {"name": "Python", "level": "Upper-Intermediate"},
+    {"name": "Vue.js", "level": "Intermediate"},
+    {"name": "P5.js", "level": "Advanced"},
+    {"name": "Three.js", "level": "Upper-Intermediate"},
+    {"name": "Java", "level": "Intermediate"}
+  ],
+  "contact": {
+    "email": "lucas.bateson@gmail.com",
+    "website": "lucasbateson.com",
+    "github": "https://github.com/Lucas8448"
+  },
+  "grades": {
+    "Maths": "Grade: 6",
+    "Science": "Grade: 6",
+    "Production and storytelling": "Grade: 6",
+    "Technology": "Grade: 6",
+    "Concept development and programming": "Grade: 6",
+    "Vocational studies (year 1)": "Grade: 6",
+    "English": "Grade: 5"
+  },
+  "projects": [
+    {
+      "name": "Vue.js weather app",
+      "description": "In this project, my goal was to create a weather forecasting app using the OpenWeather API...",
+      "github_link": "https://github.com/Lucas8448/Vue-weather-app"
+    },
+    {
+      "name": "Lokaler.lnu.no",
+      "description": "This project was introduced to me at a programming course with the creators, where they taught...",
+      "github_link": "https://github.com/lnu-norge/lokaler.lnu.no"
+    },
+    {
+      "name": "Webshop",
+      "description": "I created this project as practice for building functional websites using the Flask library...",
+      "github_link": "https://github.com/Lucas8448/WebShop"
+    },
+    {
+      "name": "Elevation-API",
+      "description": "This project aimed to be an app that could return the height of the ground (above sea level) at...",
+      "github_link": "https://github.com/Lucas8448/Elevation-API"
+    },
+    {
+      "name": "Vue.js Chess",
+      "description": "This project aimed to make a working chess board in vue.js. I managed to create most of the rules...",
+      "github_link": "https://github.com/Lucas8448/Vue.js-Chess"
+    },
+    {
+      "name": "Dall-E-API",
+      "description": "I created this website in vue.js due to running out of tokens on Dall-E. I figured out that I could...",
+      "github_link": "https://github.com/Lucas8448/Dall-E-API"
+    },
+    {
+      "name": "Colour-Recognition-ML",
+      "description": "This website was made with Vue.js as my first experiment with neural networking libraries...",
+      "github_link": "https://github.com/Lucas8448/Colour-Recognition-ML/tree/main/colour-ml"
+    },
+    {
+      "name": "Personal Homepage",
+      "description": "Built and hosted on GitHub, this page serves as a central hub to showcase my projects, skills...",
+      "github_link": "https://github.com/Lucas8448/Lucas8448.github.io"
+    },
+    {
+      "name": "Star Wars Wiki",
+      "description": "A React project aimed at creating a Star Wars themed wiki. This project served as a learning...",
+      "github_link": "https://github.com/Lucas8448/StarWarsWiki"
+    },
+    {
+      "name": "LinkDB",
+      "description": "An API database project constructed for storing data using ScyllaDB. Built using Python, it...",
+      "github_link": "https://github.com/Lucas8448/LinkDB"
+    },
+    {
+      "name": "Exchange Rate Calculator",
+      "description": "A tool designed to convert one currency to another, utilizing real-time exchange rate data...",
+      "github_link": "https://github.com/Lucas8448/ExchangeRateCalculator"
+    },
+    {
+      "name": "Simplicity",
+      "description": "A programming made with lexical analysis, parsing, and execution of basic control structures and statements...",
+      "github_link": "https://github.com/Lucas8448/Simplicity"
+    }
+  ]
+}

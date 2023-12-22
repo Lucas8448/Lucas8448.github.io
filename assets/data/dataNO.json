@@ -1,0 +1,87 @@
+{
+  "name": "Lucas William Bateson",
+  "born": "26-10-2006",
+  "education": "Fyrstikkalleen VGS",
+  "location": "Oslo, Norway",
+  "nationality": "British",
+  "interests": ["Programming", "Gaming", "Photography"],
+  "languages": [
+    {"name": "Engelsk", "level": "Morsmål"},
+    {"name": "Norsk", "level": "Flytende"},
+    {"name": "Tysk", "level": "Grunnleggende"}
+  ],
+  "skills": [
+    {"name": "HTML", "level": "Avansert"},
+    {"name": "CSS", "level": "Middels"},
+    {"name": "Javascript", "level": "Middels"},
+    {"name": "Python", "level": "Øvre Middels"},
+    {"name": "Vue.js", "level": "Middels"},
+    {"name": "P5.js", "level": "Avansert"},
+    {"name": "Three.js", "level": "Øvre Middels"},
+    {"name": "Java", "level": "Lav"}
+  ],
+  "contact": {
+    "email": "lucas.bateson@gmail.com",
+    "website": "lucasbateson.com",
+    "github": "https://github.com/Lucas8448"
+  },
+  "grades": {
+    "Maths": "Karakter: 6",
+    "Science": "Karakter: 6",
+    "Production and storytelling": "Karakter: 6",
+    "Technology": "Karakter: 6",
+    "Concept development and programming": "Karakter: 6",
+    "Vocational studies (year 1)": "Karakter: 6",
+    "English": "Karakter: 5"
+  },
+  "projects": [
+    {
+      "name": "Vue.js weather app",
+      "description": "I dette prosjektet var målet mitt å lage en værvarsling-app ved hjelp av OpenWeather API og presentere dataene i et brukervennlig grensesnitt."
+    },
+    {
+      "name": "Lokaler.lnu.no",
+      "description": "Dette prosjektet ble introdusert for meg på en programmeringskurs med skaperne, hvor de lærte meg grunnleggende konsepter i Ruby on Rails og hvordan man lager komponenter. Jeg ble også vist hvordan man sender forespørsler om endringer til prosjektet og jobber med koden basert på tilbakemeldingene deres. Jeg er fortsatt oppført som bidragsyter til dette prosjektet, selv om jeg hovedsakelig bare følger med på nettstedets utvikling."
+    },
+    {
+      "name": "Webshop",
+      "description": "Jeg lagde dette prosjektet som øvelse i å bygge funksjonelle nettsteder ved hjelp av Flask-biblioteket i Python for å levere maler og data til nettstedet. Det startet som en grunnleggende nettbutikkmal, men jeg utvidet funksjonaliteten og skrev i praksis koden på nytt."
+    },
+    {
+      "name": "Elevation-API",
+      "description": "Dette prosjektet hadde som mål å være en app som kunne returnere høyden over havet på et gitt sett med bredde- og lengdegradskoordinater. Jeg brukte mesteparten av prosjektet på å finne ut hvordan jeg kunne hente denne informasjonen, og til slutt oppdaget jeg et svart-hvitt høydekart. Jeg fokuserte deretter på hvordan jeg kunne trekke data ut av kartet og inn i en matrise, noe jeg klarte til en viss grad."
+    },
+    {
+      "name": "Vue.js Chess",
+      "description": "Dette prosjektet hadde som mål å lage et fungerende sjakkbrett i vue.js. Jeg klarte å opprette de fleste reglene for de forskjellige brikkene, selv om jeg oppdaget at trekk som En passant og Roque var kompliserte å implementere, selv om jeg til slutt klarte å forstå En passant."
+    },
+    {
+      "name": "Dall-E-API",
+      "description": "Jeg lagde denne nettsiden i vue.js fordi jeg gikk tom for tokens på Dall-E. Jeg fant ut at jeg kunne lage min egen nettside og bruke openAI bildegenerering API for å generere bilder med de 18$ gratis kreditene som jeg til slutt oppnådde. Jeg la også til en funksjon for å generere flere bilder og laste dem ned."
+    },
+    {
+      "name": "Colour-Recognition-ML",
+      "description": "Denne nettsiden ble laget med Vue.js som mitt første eksperiment med nevrale nettverksbiblioteker. Jeg brukte Brain.js-biblioteket til å lage og trene nettverket. Grunnideen bak prosjektet er å finne gjennomsnittsfargen i videostreamen og bestemme fargen basert på det forhåndstrening nevrale nettverket."
+    },
+    {
+      "name": "Personal Homepage",
+      "description": "Bygget og hostet på GitHub, denne siden fungerer som en sentral hub for å vise frem prosjektene mine, ferdighetene mine og erfaringene mine."
+    },
+    {
+      "name": "Star Wars Wiki",
+      "description": "Et React-prosjekt som tar sikte på å lage en Star Wars-tema wiki. Dette prosjektet fungerte som en læringsplattform for meg for å forstå React-konsepter, utvikle ferdighetene mine i JavaScript og front-end-utvikling."
+    },
+    {
+      "name": "LinkDB",
+      "description": "Et API-databaseprosjekt som er konstruert for å lagre data ved hjelp av ScyllaDB. Bygd med Python, ga det en solid løsning for lagring og administrasjon av data, og viste frem ferdighetene mine innen backend-utvikling og databaseadministrasjon."
+    },
+    {
+      "name": "Exchange Rate Calculator",
+      "description": "Et verktøy designet for å konvertere en valuta til en annen, ved hjelp av sanntidsvalutakursdata."
+    },
+    {
+      "name": "Simplicity",
+      "description": "Et programmeringsprosjekt med leksikalsk analyse, tolkning og utførelse av grunnleggende kontrollstrukturer og uttalelser."
+    }
+  ]
+}
