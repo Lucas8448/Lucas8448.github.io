@@ -281,7 +281,7 @@ canvas {
 }
 
 /* Mobile Adapting */
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: vertical) {
   h2 {
     font-size: 28px;
     margin-bottom: 30px;
