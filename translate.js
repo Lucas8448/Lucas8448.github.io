@@ -131,15 +131,39 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function updateProjects(projects) {
-      const projectsList = document.getElementById('projects-list');
-      projectsList.innerHTML = '';
-      projects.forEach(project => {
-          projectsList.innerHTML += `<div class='project-item'>
-              <h3>${project.name}</h3>
-              <p>${project.description}</p>
-              <a href='${project.github_link}' target='_blank'>View on GitHub</a>
-          </div>`;
-      });
+    const projectsList = document.getElementById('projects-list');
+    projectsList.innerHTML = '';
+
+    projects.forEach(project => {
+        const projectButton = document.createElement('button');
+        projectButton.textContent = project.name;
+        projectButton.classList.add('project-button');
+        projectButton.addEventListener('click', () => openProjectDialog(project));
+
+        projectsList.appendChild(projectButton);
+    });
   }
 
+  function openProjectDialog(project) {
+      const existingDialog = document.querySelector('.project-dialog');
+      if (existingDialog) {
+          existingDialog.remove();
+      }
+
+      const dialog = document.createElement('dialog');
+      dialog.classList.add('project-dialog');
+  
+      dialog.innerHTML = `
+          <h3>${project.name}</h3>
+          <p>${project.description}</p>
+          <a href='${project.github_link}' target='_blank'>View on GitHub</a>
+          <button class='close-dialog'>Close</button>
+      `;
+  
+      document.body.appendChild(dialog);
+      dialog.showModal();
+      dialog.querySelector('.close-dialog').addEventListener('click', function() {
+          dialog.close();
+      });
+  }
 });
