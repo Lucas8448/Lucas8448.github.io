@@ -1,0 +1,151 @@
+:root {
+  --color-primary: #151416;
+  --color-secondary: #faf5f7;
+  --color-tertiary: #74be2e;
+  --color-quaternary: #3ac6f9;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: var(--color-secondary);
+  line-height: 1.6;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  height: 100%;
+  padding: 20px;
+}
+
+@function stripes() {
+  $shadows: ();
+
+  @for $i from 0 through 1000 {
+    $color: '';
+
+    @if($i % 2==0) {
+      $color: #000;
+    }
+
+    @else {
+      $color: #fff;
+    }
+
+    $shadow: 0 #{$i * 3}px 0 $color;
+    $shadows: append($shadows, $shadow, comma);
+  }
+
+  @return $shadows;
+}
+
+.language {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 100;
+  width: 3vw;
+  height: 1.5vw;
+}
+
+.norsk-class {
+  background-image: url('./assets/flags/norway.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.english-class {
+  background-image: url('./assets/flags/uk.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.update-animation {
+  /* run when class init */
+  animation: update 1s ease;
+}
+
+.info {
+  grid-area: 1 / 1 / 5 / 3;
+  /* center items */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
+  grid-area: 5 / 1 / 7 / 3;
+}
+
+.projects {
+  grid-area: 5 / 3 / 7 / 7;
+}
+
+.skills {
+  grid-area: 1 / 5 / 3 / 7;
+}
+
+.grades {
+  grid-area: 3 / 5 / 5 / 7;
+}
+
+.intro {
+  grid-area: 1 / 3 / 3 / 5;
+}
+
+.languages {
+  grid-area: 3 / 3 / 4 / 5;
+}
+
+.interests {
+  grid-area: 4 / 3 / 5 / 5;
+}
+
+.info,
+.intro,
+.contact,
+.projects,
+.skills,
+.grades,
+.languages,
+.interests {
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 20px;
+}
+
+.about-title, .contact-title, .projects-title, .skills-title, .grades-title, .languages-title, .interests-title {
+
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  align-self: center;
+}

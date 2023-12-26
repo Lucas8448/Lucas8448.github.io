@@ -1,99 +1,159 @@
 {
-  "name": "Lucas William Bateson",
-  "born": "26-10-2006",
-  "education": "Fyrstikkalleen College",
-  "location": "Oslo, Norway",
-  "nationality": "British",
-  "interests": ["Programming", "Gaming", "Photography"],
-  "languages": [
-    {"name": "English", "level": "Native"},
-    {"name": "Norwegian", "level": "Native"},
-    {"name": "German", "level": "Conversational"}
-  ],
-  "skills": [
-    {"name": "HTML", "level": "Advanced"},
-    {"name": "CSS", "level": "Intermediate"},
-    {"name": "Javascript", "level": "Intermediate"},
-    {"name": "Python", "level": "Upper-Intermediate"},
-    {"name": "Vue.js", "level": "Intermediate"},
-    {"name": "P5.js", "level": "Advanced"},
-    {"name": "Three.js", "level": "Upper-Intermediate"},
-    {"name": "Java", "level": "Intermediate"}
-  ],
-  "contact": {
-    "email": "lucas.bateson@gmail.com",
-    "website": "lucasbateson.com",
-    "github": "https://github.com/Lucas8448"
-  },
-  "grades": {
-    "Maths": "Grade: 6",
-    "Science": "Grade: 6",
-    "Production and storytelling": "Grade: 6",
-    "Technology": "Grade: 6",
-    "Concept development and programming": "Grade: 6",
-    "Vocational studies (year 1)": "Grade: 6",
-    "English": "Grade: 5"
-  },
-  "projects": [
-    {
-      "name": "Vue.js weather app",
-      "description": "In this project, my goal was to create a weather forecasting app using the OpenWeather API...",
-      "github_link": "https://github.com/Lucas8448/Vue-weather-app"
-    },
-    {
-      "name": "Lokaler.lnu.no",
-      "description": "This project was introduced to me at a programming course with the creators, where they taught...",
-      "github_link": "https://github.com/lnu-norge/lokaler.lnu.no"
-    },
-    {
-      "name": "Webshop",
-      "description": "I created this project as practice for building functional websites using the Flask library...",
-      "github_link": "https://github.com/Lucas8448/WebShop"
-    },
-    {
-      "name": "Elevation-API",
-      "description": "This project aimed to be an app that could return the height of the ground (above sea level) at...",
-      "github_link": "https://github.com/Lucas8448/Elevation-API"
-    },
-    {
-      "name": "Vue.js Chess",
-      "description": "This project aimed to make a working chess board in vue.js. I managed to create most of the rules...",
-      "github_link": "https://github.com/Lucas8448/Vue.js-Chess"
-    },
-    {
-      "name": "Dall-E-API",
-      "description": "I created this website in vue.js due to running out of tokens on Dall-E. I figured out that I could...",
-      "github_link": "https://github.com/Lucas8448/Dall-E-API"
-    },
-    {
-      "name": "Colour-Recognition-ML",
-      "description": "This website was made with Vue.js as my first experiment with neural networking libraries...",
-      "github_link": "https://github.com/Lucas8448/Colour-Recognition-ML/tree/main/colour-ml"
-    },
-    {
-      "name": "Personal Homepage",
-      "description": "Built and hosted on GitHub, this page serves as a central hub to showcase my projects, skills...",
-      "github_link": "https://github.com/Lucas8448/Lucas8448.github.io"
-    },
-    {
-      "name": "Star Wars Wiki",
-      "description": "A React project aimed at creating a Star Wars themed wiki. This project served as a learning...",
-      "github_link": "https://github.com/Lucas8448/StarWarsWiki"
-    },
-    {
-      "name": "LinkDB",
-      "description": "An API database project constructed for storing data using ScyllaDB. Built using Python, it...",
-      "github_link": "https://github.com/Lucas8448/LinkDB"
-    },
-    {
-      "name": "Exchange Rate Calculator",
-      "description": "A tool designed to convert one currency to another, utilizing real-time exchange rate data...",
-      "github_link": "https://github.com/Lucas8448/ExchangeRateCalculator"
-    },
-    {
-      "name": "Simplicity",
-      "description": "A programming made with lexical analysis, parsing, and execution of basic control structures and statements...",
-      "github_link": "https://github.com/Lucas8448/Simplicity"
+  "personalInfo":{
+    "title": "Personal Information",
+    "data": {
+      "name": {
+        "label": "Name",
+        "value": "Lucas William Bateson"
+      },
+      "age": {
+        "label": "years old",
+        "value": "26-10-2006"
+      },
+      "education": {
+        "label": "Education",
+        "value": "Fyrstikkalleen Upper-secondary"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Oslo, Norway"
+      },
+      "nationality": {
+        "label": "Nationality",
+        "value": "British"
+      }
     }
-  ]
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I'm Lucas William Bateson, a 17-year-old student in Oslo, Norway, with British nationality. Currently enrolled at Fyrstikkalleen College, I'm passionate about technology, programming, gaming, and photography.\n\nI have experience in HTML, CSS, JavaScript, Python, Vue.js, P5.js, Three.js, and Java. Outside of academics, I enjoy coding, gaming, and photography projects.\n\nFor a deeper dive into my work, visit my website and GitHub profile. Feel free to reach out via email for any inquiries or collaborations. I'm eager to continue my tech journey and share insights with the community."
+  },
+  "interests":{
+    "title": "Interests",
+    "data": {
+      "label": "Interests",
+      "value": ["Programming", "Gaming", "Photography"]
+    }
+  },
+  "languages":{
+    "title": "Languages",
+    "data": {
+      "label": "Languages",
+      "value": [
+        {"name": "English", "level": "Native"},
+        {"name": "Norwegian", "level": "Native"},
+        {"name": "German", "level": "Conversational"}
+      ]
+    }
+  },
+  "skills":{
+    "title": "Skills",
+    "data": {
+      "label": "Skills",
+      "value": [
+        {"name": "HTML", "level": "Advanced"},
+        {"name": "CSS", "level": "Intermediate"},
+        {"name": "Javascript", "level": "Intermediate"},
+        {"name": "Python", "level": "Upper-Intermediate"},
+        {"name": "Vue.js", "level": "Intermediate"},
+        {"name": "P5.js", "level": "Advanced"},
+        {"name": "Three.js", "level": "Upper-Intermediate"},
+        {"name": "Java", "level": "Intermediate"}
+      ]
+    }
+  },
+  "contact":{
+    "title": "Contact Information",
+    "data": {
+      "email": {
+        "label": "Email",
+        "value": "lucas.bateson@gmail.com"
+      },
+      "website": {
+        "label": "Website",
+        "value": "lucasbateson.com"
+      },
+      "github": {
+        "label": "GitHub Profile",
+        "value": "https://github.com/Lucas8448"
+      }
+    }
+  },
+  "grades":{
+    "title": "Grades",
+    "data": [
+      {"label": "Maths", "value": "6"},
+      {"label": "Science", "value": "6"},
+      {"label": "Production and storytelling", "value": "6"},
+      {"label": "Technology", "value": "6"},
+      {"label": "Concept development and programming", "value": "6"},
+      {"label": "Vocational studies (year 1)", "value": "6"},
+      {"label": "English", "value": "5"}
+    ]
+  },
+  "projects":{
+    "title": "Projects",
+    "data": [
+      {
+        "name": "Vue.js weather app",
+        "description": "In this project, my goal was to create a weather forecasting app using the OpenWeather API and present the data in a user-friendly interface.",
+        "github_link": "https://github.com/Lucas8448/Vue-weather-app"
+      },
+      {
+        "name": "Lokaler.lnu.no",
+        "description": "This project was introduced to me in a programming course with the creators, where they taught me the basic concepts of Ruby on Rails and how to create components. I was also shown how to submit change requests to the project and work with the code based on their feedback. I am still listed as a contributor to this project, although I mainly just follow the development of the site.",
+        "github_link": "https://github.com/lnu-norge/lokaler.lnu.no"
+      },
+      {
+        "name": "Webshop",
+        "description": "I created this project as a practice for building functional websites using the Flask library in Python to deliver templates and data to the site. It started as a basic webshop template, but I expanded the functionality and essentially rewrote the code.",
+        "github_link": "https://github.com/Lucas8448/WebShop"
+      },
+      {
+        "name": "Elevation-API",
+        "description": "The aim of this project was to create an app that could return the elevation above sea level at a given set of latitude and longitude coordinates. I spent most of the project figuring out how to fetch this information and eventually discovered a black-and-white elevation map. I then focused on how to extract data from the map into an array, which I managed to a certain extent.",
+        "github_link": "https://github.com/Lucas8448/Elevation-API"
+      },
+      {
+        "name": "Vue.js Chess",
+        "description": "This project aimed to create a working chess board in vue.js. I managed to create most of the rules for the different pieces, although I found moves like En passant and Castling complicated to implement, but eventually understood En passant.",
+        "github_link": "https://github.com/Lucas8448/Vue.js-Chess"
+      },
+      {
+        "name": "Dall-E-API",
+        "description": "I created this website in vue.js because I ran out of tokens on Dall-E. I figured out that I could create my own website and use the OpenAI image generation API to generate images with the $18 of free credits I ultimately achieved. I also added a feature to generate multiple images and download them.",
+        "github_link": "https://github.com/Lucas8448/Dall-E-API"
+      },
+      {
+        "name": "Colour-Recognition-ML",
+        "description": "This website was made with Vue.js as my first experiment with neural network libraries. I used the Brain.js library to create and train the network. The basic idea behind the project is to find the average color in the video stream and determine the color based on the pre-trained neural network.",
+        "github_link": "https://github.com/Lucas8448/Colour-Recognition-ML/tree/main/colour-ml"
+      },
+      {
+        "name": "Personal Homepage",
+        "description": "Built and hosted on GitHub, this page serves as a central hub to showcase my projects, skills, and experiences.",
+        "github_link": "https://github.com/Lucas8448/Lucas8448.github.io"
+      },
+      {
+        "name": "Star Wars Wiki",
+        "description": "A React project aimed at creating a Star Wars themed wiki. This project served as a learning platform for me to understand React concepts, develop my skills in JavaScript and front-end development.",
+        "github_link": "https://github.com/Lucas8448/StarWarsWiki"
+      },
+      {
+        "name": "LinkDB",
+        "description": "An API database project constructed for storing data using ScyllaDB. Built using Python, it provided a solid solution for data storage and management, showcasing my skills in backend development and database administration.",
+        "github_link": "https://github.com/Lucas8448/LinkDB"
+      },
+      {
+        "name": "Exchange Rate Calculator",
+        "description": "A tool designed to convert one currency to another, utilizing real-time exchange rate data.",
+        "github_link": "https://github.com/Lucas8448/ExchangeRateCalculator"
+      },
+      {
+        "name": "Simplicity",
+        "description": "A programming project with lexical analysis, parsing, and execution of basic control structures and statements.",
+        "github_link": "https://github.com/Lucas8448/Simplicity"
+      }
+    ]
+  }
 }
