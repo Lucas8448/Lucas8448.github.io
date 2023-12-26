@@ -81,25 +81,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Interests
     updateData('interests-title', data.interests.title);
-    updateData('interests-content', data.interests.data.value.join(', ')); // Assuming interests are to be displayed as a comma-separated list
+    updateData('interests-content', data.interests.data.value.join(', '));
 
     // Languages
     updateData('languages-title', data.languages.title);
-    updateLanguages(data.languages.data.value); // Assuming this function will properly format and display languages
+    updateLanguages(data.languages.data.value);
 
     // Skills
     updateData('skills-title', data.skills.title);
-    updateSkills(data.skills.data.value); // Assuming this function will properly format and display skills
+    updateSkills(data.skills.data.value);
 
     // Grades
     updateData('grades-title', data.grades.title);
-    updateGrades(data.grades.data); // Assuming this function will properly format and display grades
+    updateGrades(data.grades.data);
 
     // Projects
     updateData('projects-title', data.projects.title);
-    updateProjects(data.projects.data); // Assuming this function will properly format and display projects
-
-    // Contact Information
+    updateProjects(data.projects.data);
     updateData('contact-title', data.contact.title);
     updateData('email', data.contact.data.email.value);
     updateData('website', data.contact.data.website.value);
