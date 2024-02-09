@@ -11,10 +11,8 @@ export default function IndexPage() {
         <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
           Contact
         </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Email: lucas.bateson@gmail.com <br className="hidden sm:inline" />
-          Discord: battlelord_
-        </p>
+        <p className="text-gray-600 dark:text-gray-400">lucas.bateson@gmail.com</p>
+        <p className="text-gray-600 dark:text-gray-400">Discord: battlelord_</p>
       </div>
     </section>
   )
